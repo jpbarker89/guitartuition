@@ -38,7 +38,7 @@ h1 {
 }
 
 
-#header {
+body > header {
     display: block;
     width: 100%;
     max-width: 1000px;
@@ -46,7 +46,7 @@ h1 {
 }
 
 /* Style the navigation menu */
-.navbar {
+body > nav {
     width: 100%;
     background-color: #555;
     overflow: auto;
@@ -56,18 +56,18 @@ h1 {
     border-bottom: solid 3px white;
 }
 
-.navbar ul {
+body > nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.navbar li {
+body > nav li {
     flex: 0 0 50%;
 }
 
 /* Navigation links */
-.navbar a {
+body > nav a {
     display: block;
     padding: 12px;
     color: whitesmoke;
@@ -80,7 +80,7 @@ h1 {
 }
 
 /*footer*/
-#footer {
+.footer-row {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -91,7 +91,7 @@ h1 {
     margin-right: auto;
 }
 
-#footer p {
+.footer-row p {
     margin: 0;
 }
 
@@ -124,6 +124,10 @@ h1 {
     gap: 1rem;
 }
 
+.footer-contact a:hover {
+    background: none;
+    text-decoration: underline;
+}
 
 .footer-contact p {
     margin: 0;
@@ -204,6 +208,7 @@ button[type=submit] {
     font-weight: bolder;
     font-size: larger;
     height: 50px;
+    margin-top: 1rem;
 }
 
 /* Add a background color to the submit button on mouse-over */
@@ -260,13 +265,25 @@ textarea:hover {
     max-width: 50%;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
 @media screen and (min-width: 640px) {
 
-    #header, .navbar {
+    body > header, body > nav {
         margin-top: 2rem;
     }
 
-    .navbar li {
+    body > nav li {
         flex: auto;
     }
 
@@ -294,7 +311,7 @@ textarea:hover {
         margin: 0 auto;
     }
 
-    #footer {
+    .footer-row {
         flex-direction: row;
         align-items: flex-end;
         max-width: 100%;

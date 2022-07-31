@@ -18,11 +18,11 @@
 </head>
 <body>
 
-<div class="container">
-    <img id="header" src="images/jbgt-header.png" alt="Joe Barker Guitar Tuition banner">
-</div>
+<header>
+    <img src="images/jbgt-header.png" alt="Joe Barker Guitar Tuition banner">
+</header>
 
-<div class="navbar">
+<nav>
     <div class="container">
         <ul>
             <li>
@@ -39,38 +39,47 @@
             </li>
         </ul>
     </div>
-</div>
+</nav>
 
-<div class="container">
-
+<section class="container">
     <h1 class="font">CONTACT ME</h1>
 
     <div id="contact-form-container">
         <p class="font font-lg" id="message-me">Please make sure you fill in all the required fields..</p>
         <form id="form_align" action="https://formsubmit.co/jpbarker89@gmail.com" method="POST">
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="email" name="email" placeholder="Email Address" required>
-            <textarea name="message" placeholder="Enter Message" cols="30" rows="10" required></textarea> >
+            <label>
+                <span class="sr-only">Name</span>
+                <input type="text" name="name" placeholder="Name" required>
+            </label>
+            <label>
+                <span class="sr-only">Email address</span>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </label>
+            <label>
+                <span class="sr-only">Message</span>
+                <textarea name="message" placeholder="Enter Message" cols="30" rows="10" required></textarea>
+            </label>
             <button type="submit">Send</button>
         </form>
     </div>
-</div>
+</section>
 
-<div class="container">
-    <div id="footer">
+<footer class="container">
+    <div class="footer-row">
         <div class="footer-logo">
             <img id="logo" src="images/joe-barker-gt-logo.png" alt="Joe Barker Guitar Tuition logo">
         </div>
 
-        <div class="footer-contact">
+        <address class="footer-contact">
             <a href="https://www.facebook.com/JoeBarkerGuitarTuition" target="_blank">
                 <img class="footer-icon" src="images/facebook.png" alt="Facebook logo">
             </a>
             <p class="font">
-                Phone: 07528 393357 Email: jpbarker89@gmail.com <br>
+                Phone: <a href="tel:07528393357">07528 393357</a>
+                Email: <a href="mailto:jpbarker89@gmail.com">jpbarker89@gmail.com</a> <br>
                 2a King Edward Street, Macclesfield, Cheshire, UK. SK10 1AT
             </p>
-        </div>
+        </address>
 
         <div class="footer-copyright">
             <img class="footer-icon" src="images/dbs.png" alt="DBS Checked">
@@ -80,6 +89,6 @@
             </p>
         </div>
     </div>
-</div>
+</footer>
 </body>
 </html>
