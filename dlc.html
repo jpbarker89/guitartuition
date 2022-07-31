@@ -3,6 +3,7 @@
 <head>
     <title>DLC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/jbgt.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
@@ -13,31 +14,56 @@
 <img id="header" src="images/jbgt-header.png" alt="Joe Barker Guitar Tuition banner">
 
 <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact-me.html">Contact</a>
-    <a href="dlc.html">D.L.C</a>
+    <div class="container">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="contact-me.html">Contact</a>
+            </li>
+            <li>
+                <a href="dlc.html">D.L.C</a>
+            </li>
+        </ul>
+    </div>
 </div>
 
-<h1 class="font">MORE CONTENT TO FOLLOW...</h1>
+<div class="container">
+    <h1 class="font">MORE CONTENT TO FOLLOW...</h1>
 
-<div id="terms-and-conditions" class="font">
-    <a href="downloads/JBGT-Terms-&-Conditions.pdf" target="_blank">Download Terms & Conditions</a>
+    <div class="font font-lg">
+        <a href="downloads/JBGT-Terms-&-Conditions.pdf" target="_blank">Download Terms & Conditions</a>
+    </div>
 </div>
 
-<div id="footer">
-    <img id="logo" src="images/joe-barker-gt-logo.png" alt="Joe Barker Guitar Tuition logo">
-    <a href="https://www.facebook.com/JoeBarkerGuitarTuition" target="_blank">
-        <img id="fb" src="images/facebook.png" alt="Facebook logo">
-    </a>
-    <p class="font" id="copyright">&copy; Joe Barker Guitar Tuition & Logo<br>
-        All Rights Reserved
-    </p>
-    <p class="font" id="contact-footer">
-        Phone: 07528 393357 Email: jpbarker89@gmail.com <br>
-        2a King Edward Street, Macclesfield, Cheshire, UK. SK10 1AT
-    </p>
-    <img id="dbs" src="images/dbs.png" alt="DBS Checked">
+<div class="container">
+    <div id="footer">
+        <div class="footer-logo">
+            <img id="logo" src="images/joe-barker-gt-logo.png" alt="Joe Barker Guitar Tuition logo">
+        </div>
+
+        <div class="footer-contact">
+            <a href="https://www.facebook.com/JoeBarkerGuitarTuition" target="_blank">
+                <img class="footer-icon" src="images/facebook.png" alt="Facebook logo">
+            </a>
+            <p class="font">
+                Phone: 07528 393357 Email: jpbarker89@gmail.com <br>
+                2a King Edward Street, Macclesfield, Cheshire, UK. SK10 1AT
+            </p>
+        </div>
+
+        <div class="footer-copyright">
+            <img class="footer-icon" src="images/dbs.png" alt="DBS Checked">
+            <p class="font">
+                &copy; Joe Barker Guitar Tuition & Logo<br>
+                All Rights Reserved
+            </p>
+        </div>
+    </div>
 </div>
 </body>
 </html>
