@@ -4,13 +4,17 @@ html, body {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: black;
+    min-height: 100vh;
 }
 
 .container {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 1rem;
 }
 
@@ -80,6 +84,11 @@ body > nav a {
 }
 
 /*footer*/
+
+body > footer {
+    margin-top: auto;
+}
+
 .footer-row {
     display: flex;
     flex-direction: column;
